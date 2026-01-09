@@ -272,9 +272,9 @@ var dfuse = {};
         }
 
         try {
-            await this.poll_until(state => (state == dfu.dfuMANIFEST));
+            //await this.poll_until(state => (state == dfu.dfuMANIFEST));  //daniel STM32G0 issue
         } catch (error) {
-            this.logError(error);
+            //this.logError(error);  //daniel STM32G0 issue
         }
     }
 
